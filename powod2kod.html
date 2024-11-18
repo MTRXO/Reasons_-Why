@@ -32,7 +32,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="powod2kod.html">Pwód nr 2</a>
+                <a class="nav-link" href="#">Pwód nr 2</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Pwód nr 3</a>
@@ -67,11 +67,11 @@
             const input = document.getElementById('codeInput').value;
             const message = document.getElementById('message');
 
-            if (input === '2007') {
+            if (input === '100') {
                 message.innerHTML = '<div class="alert alert-success">Kod poprawny! Uzyskano dostęp.</div>';
                 // Przekierowanie lub dalsze akcje
                 setTimeout(() => {
-                    window.location.href = 'powod1.html'; // Wprowadź adres swojej podstrony
+                    window.location.href = 'powod2.html'; // Wprowadź adres swojej podstrony
                 }, 2000);
             } else {
                 message.innerHTML = '<div class="alert alert-danger">Niepoprawny kod. Spróbuj ponownie.</div>';
