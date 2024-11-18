@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularz z kodem</title>
     <!-- Bootswatch Vapor CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.0/dist/vapor/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
             padding: 2rem;
@@ -38,7 +38,7 @@
                 <a class="nav-link" href="powod3kod.html">Pwód nr 3</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pwód nr 4</a>
+                <a class="nav-link" href="powod4kod.html">Pwód nr 4</a>
               </li>
             </ul>
       
@@ -67,11 +67,11 @@
             const input = document.getElementById('codeInput').value;
             const message = document.getElementById('message');
 
-            if (input === '100') {
+            if (input === '31102024') {
                 message.innerHTML = '<div class="alert alert-success">Kod poprawny! Uzyskano dostęp.</div>';
                 // Przekierowanie lub dalsze akcje
                 setTimeout(() => {
-                    window.location.href = 'powod2.html'; // Wprowadź adres swojej podstrony
+                    window.location.href = 'powod4.html'; // Wprowadź adres swojej podstrony
                 }, 2000);
             } else {
                 message.innerHTML = '<div class="alert alert-danger">Niepoprawny kod. Spróbuj ponownie.</div>';
